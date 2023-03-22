@@ -1,0 +1,185 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;600;700&family=Red+Hat+Display:wght@300;500;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("./imagen/paisajemediano.jpg");
+    background-size: cover;
+
+    --header-button-bg-color: rgba(132,183,114,.3);
+    --header-button-hover-bg-color: rgb(0,0,0);
+    --header-bg-color: rgba(58, 80, 53, .5);
+    --aside-bg-color: rgb(9,40,60, .2)
+}
+
+header {
+    background-color: var(--header-bg-color);
+    width: 100%;
+    height: 4rem;
+}
+#nav-logo {
+    width: 4rem;
+    margin-left: 2rem;
+}
+.nav-container {
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.nav-item {
+    display: inline-block;
+    background-color: var(--header-button-bg-color);
+    color: white;
+    border-radius: .5rem;
+    font-family: "Hind Siliguri";
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.nav-item:hover {
+    cursor: pointer;
+    background-color: var(--header-button-hover-bg-color);
+    transform: scale(1.2);
+    transition: 2ms;
+}
+
+#image-log{
+    width: 1rem;
+    height: 1rem;;
+}
+
+
+main {
+    width: 80vw;
+    height: calc(100vh - 4rem - 2.5rem);
+    position: relative;
+    top: 1rem;
+    left: calc(20vw);
+}
+
+#main-item-1 {
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+    width: calc((80vw - 4rem  )/2 );
+    height: calc(100vh - 4rem - 2.5rem - 3rem);
+    border: none;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+#main-item-2 {
+    display: inline-block;
+    position: absolute;
+    right:  1rem;
+    width: calc((80vw - 4rem )/2 );
+    height: calc(100vh - 4rem - 2.5rem - 3rem);
+    border: none;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+
+
+
+
+
+
+
+aside {
+    background-color: var(--aside-bg-color);
+    width: 20vw;
+    height: calc(100vh - 4rem - 2.5rem);
+    position: absolute;
+    top: 4rem;
+    left: 0px;
+}
+
+.aside-container{
+    background-color: var(--aside-bg-color);
+    width: 100%;
+    height: 100%;
+}
+
+.aside-item {
+    display: block;
+    width: 18vw;
+    height: calc((100vh - 4rem - 2.5rem - 5rem)/4);
+    border-radius: 0.5rem;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.aside-item:hover{
+    border:none;
+    cursor: pointer;
+}
+
+.aside-il-img {
+    border: none;
+    border-radius: 0.5rem;
+    width: 18vw;
+    height: calc((100vh - 4rem - 2.5rem - 5rem)/4);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0, 0.7) ;
+    filter: grayscale(100%);
+}
+.aside-il-img:hover {
+    border: none;
+    box-shadow: none;
+    filter: grayscale(0%);
+}
+
+
+footer {
+    width: 100%;
+    height: 2.5rem;
+    position: absolute;
+    left: 0px;
+    bottom: 0px
+}
+footer div {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#copyright {
+    padding-top: 1rem;
+    padding-left: 3rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 0.5rem;
+    display: inline-block;
+    color: white;
+}
+.footer-container {
+    position: absolute;
+    display: inline-block;
+    right: 1rem;
+}
+
+.footer-container li  {
+    display: inline-block;
+    margin-top: .5rem;
+    color: white;
+}
+.footer-container li img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.footer-container li img:hover {
+    cursor: pointer;
+}
